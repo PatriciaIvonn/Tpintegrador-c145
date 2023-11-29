@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequiredArgsConstructor
-public class ClienteController {
+public class ServicioController {
     // @Autowired
     // private ClienteService clienteService;
     private final ClienteService clienteService;
