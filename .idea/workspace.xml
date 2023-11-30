@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/EspecialidadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/TecnicoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/TipoProblemaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoEspecialidades.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoTecnicos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoTiposProblemas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Especialidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Incidente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/IncidenteDetalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/IncidenteDetalle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Tecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/TipoProblema.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/TipoProblema.java" afterDir="false" />
-    </list>
+    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +116,7 @@
       <workItem from="1701181854364" duration="8557000" />
       <workItem from="1701216421473" duration="15567000" />
       <workItem from="1701277564694" duration="13926000" />
-      <workItem from="1701300903686" duration="10563000" />
+      <workItem from="1701300903686" duration="10642000" />
     </task>
     <servers />
   </component>
