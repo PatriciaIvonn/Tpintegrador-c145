@@ -15,16 +15,13 @@ import lombok.NoArgsConstructor;
 public class Especialidad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCliente;
+    private Long idEspecialidad;
 
     @Column(nullable = false, length = 255)
-    private String razonSocial;
+    private String nombre;
 
-    @Column(nullable = false, length = 20)
-    private String cuit;
+    @Column(nullable = false, columnDefinition = "boolean default true")
+    private boolean activo = true;
 
-    @Column(nullable = false, length = 255)
-    private String mail;
-
-
+    // Relaciones
 }

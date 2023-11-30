@@ -1,23 +1,24 @@
 package com.ap.tpintegrado.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Table(name = "incidente_detalle")
 public class IncidenteDetalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCliente;
+    private Long idIncidenteDetalle;
 
-    @Column(nullable = false, length = 255)
-    private String razonSocial;
+    @Column(nullable = false, columnDefinition = "boolean default true")
+    private boolean activo = true;
 
-    @Column(nullable = false, length = 20)
-    private String cuit;
-
-    @Column(nullable = false, length = 255)
-    private String mail;
-
-
+    // Relaciones
 }
