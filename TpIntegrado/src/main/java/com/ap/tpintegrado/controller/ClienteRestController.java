@@ -6,26 +6,20 @@ import com.ap.tpintegrado.service.ClienteService;
 import com.ap.tpintegrado.service.ServicioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
 @RestController
 @RequiredArgsConstructor
 public class ClienteRestController {
-
     private final ClienteService clienteService;
 
     private final ServicioService servicioService;
 
-    // Guardar o agregar
+    // Guardar
     @PostMapping("/cliente")
     public Cliente guardar(@Validated @RequestBody Map<String, Object> body){
-        // Lectura de datos
-        // Razon Social
         String razonSocial = String.valueOf(body.get("razonSocial"));
         String cuit = String.valueOf(body.get("cuit"));
         String mail = String.valueOf(body.get("mail"));
@@ -33,8 +27,8 @@ public class ClienteRestController {
 
         //
         Set<Servicio> servicios = new HashSet<>();
-        for (Integer id: (ArrayList<Integer>) body.get("servicio_ids")) {
-            Servicio servicio = servicioService.obtenerPorId(Long.valueOf(id));
+        for (Integer idServiccios: (ArrayList<Integer>) body.get("servicio_ids")) {
+            Servicio servicio = servicioService.obtenerPorId(Long.valueOf(idServiccios));
             servicios.add(servicio);
         }
 
@@ -49,9 +43,46 @@ public class ClienteRestController {
         return clienteService.guardar(cliente);
     }
 
-    // Listado de clientes
+    // Actualiza
+    @PutMapping("/cliente/{id}")
+    public Cliente actualizar(@Validated @RequestBody Map<String, Object> body, @PathVariable("id") long id){
+        Cliente cliente = new Cliente();
+
+        if (clienteService.obtenerPorId(id) != null) {
+            String razonSocial = String.valueOf(body.get("razonSocial"));
+            String cuit = String.valueOf(body.get("cuit"));
+            String mail = String.valueOf(body.get("mail"));
+            boolean activo = Boolean.valueOf((String) body.get("activo"));
+
+            //
+            Set<Servicio> servicios = new HashSet<>();
+            for (Integer idServicios: (ArrayList<Integer>) body.get("servicio_ids")) {
+                Servicio servicio = servicioService.obtenerPorId(Long.valueOf(idServicios));
+                servicios.add(servicio);
+            }
+
+            cliente = Cliente.builder()
+                    .razonSocial(razonSocial)
+                    .cuit(cuit)
+                    .mail(mail)
+                    .activo(activo)
+                    .servicios(servicios)
+                    .build();
+        }
+
+        return clienteService.actualizar(cliente, id);
+    }
+
+    // Listado
     @GetMapping("/clientes")
     public List<Cliente> fetchClienteList(){
         return clienteService.obtenerTodos();
+    }
+
+    // Eliminar
+    @DeleteMapping("/cliente/{id}")
+    public String eliminar(@PathVariable("id") long id) {
+        clienteService.eliminar(id);
+        return "Eliminado correctamente";
     }
 }

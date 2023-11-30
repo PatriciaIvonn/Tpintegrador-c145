@@ -10,49 +10,45 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class ClienteServiceImp implements ClienteService {
-    // @Autowired
-    // private clienteService clienteService;
     private final ClienteRepository clienteRepository;
 
-    // Guardar o agregar
+    // Guarda
     @Override
     public Cliente guardar(Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 
-    // Obtener los datos de todos los clientes
-//    @Override
-//    public List<Cliente> obtenerUnClientePorId() {
-//        return clienteRepository.findAll();
-//    }
+    // Obtiene uno
+    @Override
+    public Cliente obtenerPorId(long id) {
+        return clienteRepository.findById(id).orElseThrow();
+    }
 
-    // Obtener los datos de todos los clientes
+    // Obtiene por razon social y cuit
+    @Override
+    public Cliente obtenerPorRazonSocialCuit(long id) {
+        return clienteRepository.findById(id).orElseThrow();
+    }
+
+    // Obtiene todos
     @Override
     public List<Cliente> obtenerTodos() {
         return clienteRepository.findAll();
     }
 
-    // Actualizacion
+    // Actualiza
     @Override
     public Cliente actualizar(Cliente cliente, long id) {
-        Cliente clienteDB = clienteRepository.getReferenceById(id);
-
-//        if(!cliente.getNombre().trim().isEmpty())
-//            personaDB.setNombre(persona.getNombre());
-//        if(persona.getContacto() != null) {
-//            if (!persona.getContacto().getEmail().trim().isEmpty())
-//                personaDB.getContacto().setEmail(persona.getContacto().getEmail());
-//            if (!persona.getContacto().getCelular().trim().isEmpty())
-//                personaDB.getContacto().setCelular(persona.getContacto().getCelular());
-//        }
-//        if(persona.getNacionalidad() != null)
-//            personaDB.setNacionalidad(persona.getNacionalidad());
-//        personaDB.setMascotas(persona.getMascotas());
+        Cliente clienteDB = clienteRepository.findById(id).orElseThrow();
+        clienteDB.setRazonSocial(cliente.getRazonSocial());
+        clienteDB.setCuit(cliente.getCuit());
+        clienteDB.setMail(cliente.getMail());
+        // clienteDB.setActivo(cliente.getAActivo());
 
         return clienteRepository.save(clienteDB);
     }
 
-    // Eliminacion
+    // Elimina
     @Override
     public void eliminar(long id) {
         clienteRepository.deleteById(id);

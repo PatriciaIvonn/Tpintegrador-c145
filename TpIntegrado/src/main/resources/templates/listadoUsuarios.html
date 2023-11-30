@@ -1,34 +1,27 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>WEB CLIENTES</title>
+    <title>WEB USUARIOS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-    <h1>Lista de clientes</h1>
+    <h1>Lista de usuarios</h1>
     <table class="table table-striped table-bordered">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Razo Social</th>
-                <th scope="col">Mail</th>
-                <th scope="col">Celular</th>
-                <th scope="col">Mascotas</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Pass</th>
+                <th scope="col">Rol</th>
             </tr>
         </thead>
         <tbody>
-            <tr th:each="cliente: ${clientes}">
-                <th scope="row" th:text="${cliente.getIdCliente()}"/>
-                <td th:text="${cliente.getRazonSocial()}" />
-<!--                <td th:text="${p.getContacto().getEmail()}" />-->
-<!--                <td th:text="${p.getContacto().getCelular()}" />-->
-<!--                <td>-->
-<!--                    <th:block th:each="m: ${p.getMascotas()}">-->
-<!--                            <p th:text="${m?.getNombre()}"/>-->
-<!--                    </th:block >-->
-<!--                </td>-->
+            <tr th:each="usuario: ${usuarios}">
+                <th scope="row" th:text="${usuario.getIdUsuario()}"/>
+                <td th:text="${usuario.getNombre()}" />
+                <td th:text="${usuario.getPass()}" />
             </tr>
         </tbody>
     </table>

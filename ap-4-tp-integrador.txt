@@ -1,0 +1,17 @@
+Integrantes
+-----------
+
+Silvio Jorda silvio.jorda@gmail.com 
+Juan Carlos Alderete yiyoajc@hotmail.com 
+Fernando Gesteira fernandogesteira@hotmail.com 
+Patricia Mardoñez proyectosemprendimientos2023@gmail.com
+
+
+GitHub
+------
+https://github.com/PatriciaIvonn/Tpintegrador-c145
+
+
+La solucion esta en utilizando una BD MySQL
+Se generan las tablas automaticamente
+Los CURDs se estan implementando

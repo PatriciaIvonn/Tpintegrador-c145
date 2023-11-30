@@ -26,7 +26,6 @@ public class Cliente {
     @Column(nullable = false, length = 255)
     private String mail;
 
-    // Se define esta columna para eliminacion logica
     @Column(nullable = false, columnDefinition = "boolean default true")
     private boolean activo = true;
 

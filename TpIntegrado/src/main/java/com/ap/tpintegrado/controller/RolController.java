@@ -1,6 +1,6 @@
 package com.ap.tpintegrado.controller;
 
-import com.ap.tpintegrado.service.ServicioService;
+import com.ap.tpintegrado.service.RolService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class ServicioController {
-    private final ServicioService servicioService;
+public class RolController {
+    private final RolService rolService;
 
-    @GetMapping("/listadoServicios")
+    @GetMapping("/listadoRoles")
     public String viewBooks(Model model) {
-        model.addAttribute("servicios", servicioService.obtenerTodos());
-        return "listadoServicios";
+        model.addAttribute("roles", rolService.obtenerTodos());
+        return "listadoRoles";
     }
 }

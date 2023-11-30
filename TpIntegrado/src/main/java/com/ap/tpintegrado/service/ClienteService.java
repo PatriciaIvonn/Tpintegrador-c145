@@ -5,15 +5,21 @@ import com.ap.tpintegrado.entity.Cliente;
 import java.util.List;
 
 public interface ClienteService {
-    // Create
+    // Crear
     Cliente guardar(Cliente cliente);
 
-    // Read
+    // Obtiene uno
+    Cliente obtenerPorRazonSocialCuit(long id);
+
+    // Obtiene uno
+    Cliente obtenerPorId(long id);
+
+    // Obtener todos
     List<Cliente> obtenerTodos();
 
-    // Update
+    // Actualizar
     Cliente actualizar(Cliente cliente, long id);
 
-    // Delete
+    // Eliminar
     void eliminar(long id);
 }

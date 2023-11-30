@@ -8,14 +8,15 @@ public interface ServicioService {
     // Crear
     Servicio guardar(Servicio servicio);
 
-    // Leer
+    // Obtiene uno
+    Servicio obtenerPorId(long id);
+
+    // Obtener todos
     List<Servicio> obtenerTodos();
 
-    // Update
+    // Actualizar
     Servicio actualizar(Servicio servicio, long id);
 
-    // Delete
+    // Eliminar
     void eliminar(long id);
-
-    Servicio obtenerPorId(long id);
 }

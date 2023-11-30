@@ -5,35 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/AplicacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/RolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/RolRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/UsuarioRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/RolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/BaseInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/RolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/RolServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/UsuarioServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoRoles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoServicios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoUsuarios.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/IncidenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/IncidenteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/IncidenteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/IncidenteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ServicioRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Especialidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Incidente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/IncidenteDetalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/IncidenteDetalle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Rol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Servicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Tecnico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/entity/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/MascotaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/ServicioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/NacionalidadRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/PersonaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/MascotaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/MascotaServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ServicioServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/saludo.html" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/saludo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/view-personas.html" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/view-clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/view-clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/resources/templates/listadoClientes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +50,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "docker-desktop"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,7 +91,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Desarrollos/ap-4/t-2/java-intemedio-com-145/Tpintegrador-c145",
+    "last_opened_file_path": "C:/Desarrollos/ap-4/t-2/java-intemedio-com-145/Tpintegrador-c145/TpIntegrado/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +99,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -91,9 +111,10 @@
       <recent name="com.ap.tpintegrado.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\resources\templates" />
+      <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\resources" />
       <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\java\com\ap\tpintegrado\repository" />
       <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\java\com\ap\tpintegrado\service" />
-      <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ap.tpintegrado.controller" />
@@ -128,21 +149,12 @@
       <workItem from="1701142878674" duration="1392000" />
       <workItem from="1701181854364" duration="8557000" />
       <workItem from="1701216421473" duration="15567000" />
+      <workItem from="1701277564694" duration="13926000" />
+      <workItem from="1701300903686" duration="8160000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/ClienteServiceImp.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

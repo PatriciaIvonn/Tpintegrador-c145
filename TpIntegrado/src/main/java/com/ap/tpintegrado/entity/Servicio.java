@@ -21,6 +21,9 @@ public class Servicio {
     @Column(nullable = false, length = 255)
     private String nombre;
 
+    @Column(nullable = false, columnDefinition = "boolean default true")
+    private boolean activo = true;
+
     @ManyToMany(mappedBy = "servicios")
     Set<Cliente> clientes;
 }
