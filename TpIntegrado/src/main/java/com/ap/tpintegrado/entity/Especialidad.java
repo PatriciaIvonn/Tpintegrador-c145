@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -22,6 +24,9 @@ public class Especialidad {
 
     @Column(nullable = false, columnDefinition = "boolean default true")
     private boolean activo = true;
-
     // Relaciones
+    @ManyToMany(mappedBy = "listaEspecialidades")
+    List<Tecnico>listaTecnicos;
+
+
 }
