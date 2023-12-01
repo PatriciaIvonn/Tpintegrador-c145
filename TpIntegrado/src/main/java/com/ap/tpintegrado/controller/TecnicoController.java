@@ -1,37 +1,19 @@
 package com.ap.tpintegrado.controller;
 
-import com.ap.tpintegrado.entity.Tecnico;
-import com.ap.tpintegrado.service.TecnicoServiceImpl;
+import com.ap.tpintegrado.service.ClienteService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
 public class TecnicoController {
-
-    @Autowired
-    TecnicoServiceImpl tecnicoService;
+    private final ClienteService clienteService;
 
     @GetMapping("/listadoTecnicos")
-    public ResponseEntity<?>listarTecnicos(){
-        return new ResponseEntity<>(tecnicoService.listarTecnico(), HttpStatus.OK);
+    public String viewBooks(Model model) {
+        model.addAttribute("tecnicos", clienteService.obtenerTodos());
+        return "listadoTecnicos";
     }
-    @PostMapping("/tecnico")
-    public ResponseEntity<?> crearTecnico(@RequestBody Tecnico tecnico){
-        return new ResponseEntity<>(tecnicoService.crearTecnico(tecnico),HttpStatus.OK);
-
-    }
-    @GetMapping("/tecnico/{idTecnico}")
-    public ResponseEntity<?>traerTecnicoId(@PathVariable Long idTecnico){
-        return new ResponseEntity<>(tecnicoService.traerUnTecnico(idTecnico), HttpStatus.OK);
-    }
-    @DeleteMapping("/tecnico/{idTecnico}")
-    public ResponseEntity<?>borrarTecnico(@PathVariable Long idTecnico){
-        return new ResponseEntity<>(tecnicoService.borrarTecnico(idTecnico),HttpStatus.OK);
-    }
-
 }

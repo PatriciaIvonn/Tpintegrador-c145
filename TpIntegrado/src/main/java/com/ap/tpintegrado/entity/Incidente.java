@@ -14,7 +14,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @Table(name = "incidentes")
 public class Incidente {
-    //comentario
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idIncidente;
