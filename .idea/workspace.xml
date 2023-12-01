@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="" />
+    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/EspecialidadRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/TipoProblemaRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/TipoProblemaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/TipoProblemaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/TipoProblemaServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,14 +31,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "docker-desktop"
+      &quot;name&quot;: &quot;docker-desktop&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="docker-desktop" />
   </component>
@@ -57,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Desarrollos/ap-4/t-2/java-intemedio-com-145/Tpintegrador-c145/TpIntegrado/src/main/resources/templates",
+    "last_opened_file_path": "C:/Desarrollos/ap-4/t-2/java-intemedio-com-145/Tpintegrador-c145",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,9 +90,9 @@
       <recent name="C:\Desarrollos\ap-4\t-2\java-intemedio-com-145\Tpintegrador-c145\TpIntegrado\src\main\java\com\ap\tpintegrado\service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ap.tpintegrado.controller" />
       <recent name="com.ap.tpintegrado.service" />
       <recent name="com.ap.tpintegrado.repository" />
+      <recent name="com.ap.tpintegrado.controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,6 +124,7 @@
       <workItem from="1701216421473" duration="15567000" />
       <workItem from="1701277564694" duration="13926000" />
       <workItem from="1701300903686" duration="10642000" />
+      <workItem from="1701369644680" duration="4640000" />
     </task>
     <servers />
   </component>
