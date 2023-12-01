@@ -17,6 +17,7 @@ public class TecnicoController {
     @GetMapping("/tecnicos")
     public ResponseEntity<?>obtenerTecnicos(){
         return new ResponseEntity<>(tecService.traerTecnicos(), HttpStatus.OK);
+
     }
     @PostMapping("/tecnico")
     public ResponseEntity<?>crearTecnico(@RequestBody Tecnico tecnico){
