@@ -45,7 +45,6 @@ public class ServicioRestController {
         return servicioService.actualizar(servicio, id);
     }
 
-
     // Eliminar
     @DeleteMapping("/servicio/{id}")
     public String eliminar(@PathVariable("id") long id){

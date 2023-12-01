@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequiredArgsConstructor
 public class EspecialidadController {
-
     @Autowired
     EspecialidadServiceImpl espeService;
 

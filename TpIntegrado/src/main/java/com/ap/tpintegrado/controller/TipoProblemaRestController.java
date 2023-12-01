@@ -1,13 +1,14 @@
 package com.ap.tpintegrado.controller;
 
 import com.ap.tpintegrado.entity.Cliente;
-import com.ap.tpintegrado.entity.Servicio;
 import com.ap.tpintegrado.entity.TipoProblema;
+import com.ap.tpintegrado.service.TipoProblemaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 @RestController
 @RequiredArgsConstructor
 public class TipoProblemaRestController {
@@ -18,6 +19,8 @@ public class TipoProblemaRestController {
     // Guardar
     @PostMapping("/tipoProblema")
     public TipoProblema guardar(@Validated @RequestBody Map<String, Object> body){
+
+        TipoProblema tipoProblema = new TipoProblema();
 //        String razonSocial = String.valueOf(body.get("razonSocial"));
 //        String cuit = String.valueOf(body.get("cuit"));
 //        String mail = String.valueOf(body.get("mail"));
