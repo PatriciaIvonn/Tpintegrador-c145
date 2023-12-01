@@ -19,11 +19,13 @@ public class TecnicoServiceImpl implements TecnicoService {
 
     @Override
     public List<Tecnico> traerTecnicos() {
+
         return tecRepo.findAll();
     }
 
     @Override
     public String eliminarTecnico(Long idTecnico) {
+
         tecRepo.findById(idTecnico).orElseThrow(()-> new RuntimeException("No existe el tecnico "));
        tecRepo.deleteById(idTecnico);
         return "Se elimino el tecnico Correctamente";
@@ -31,6 +33,7 @@ public class TecnicoServiceImpl implements TecnicoService {
 
     @Override
     public Tecnico buscarTecnico(Long idTecnico) {
+
         return  tecRepo.findById(idTecnico).orElseThrow(()-> new RuntimeException("No existe el tecnico "));
     }
 }
