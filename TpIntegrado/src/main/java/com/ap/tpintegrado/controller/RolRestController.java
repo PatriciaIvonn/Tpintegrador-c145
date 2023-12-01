@@ -14,32 +14,16 @@ import java.util.Map;
 public class RolRestController {
     private final RolService rolService;
 
-//    private final ServicioService servicioService;
-
-    // Guardar
+    // Guarda
     @PostMapping("/rol")
     public Rol guardar(@Validated @RequestBody Map<String, Object> body){
-        Rol rol = new Rol();
-//        String razonSocial = String.valueOf(body.get("razonSocial"));
-//        String cuit = String.valueOf(body.get("cuit"));
-//        String mail = String.valueOf(body.get("mail"));
-//        boolean activo = Boolean.valueOf((String)body.get("activo"));
-//
-//        //
-//        Set<Servicio> servicios = new HashSet<>();
-//        for (Integer idServiccios: (ArrayList<Integer>) body.get("servicio_ids")) {
-//            Servicio servicio = servicioService.obtenerPorId(Long.valueOf(idServiccios));
-//            servicios.add(servicio);
-//        }
-//
+        //        String rol = String.valueOf(body.get("rol"));
+        boolean activo = Boolean.valueOf((String)body.get("activo"));
 
-//        Rol rol = rol.builder()
-//                .razonSocial(razonSocial)
-//                .cuit(cuit)
-//                .mail(mail)
-//                .activo(activo)
-//                .servicios(servicios)
-//                .build();
+        Rol rol = Rol.builder()
+//                .rol(rol)
+                .activo(activo)
+                .build();
 
         return rolService.guardar(rol);
     }
@@ -48,27 +32,16 @@ public class RolRestController {
     @PutMapping("/rol/{id}")
     public Rol actualizar(@Validated @RequestBody Map<String, Object> body, @PathVariable("id") long id){
         Rol rol = new Rol();
-        //if (clienteService.obtenerPorId(id) != null) {
-//            String razonSocial = String.valueOf(body.get("razonSocial"));
-//            String cuit = String.valueOf(body.get("cuit"));
-//            String mail = String.valueOf(body.get("mail"));
-//            boolean activo = Boolean.valueOf((String) body.get("activo"));
-//
-//            //
-//            Set<Servicio> servicios = new HashSet<>();
-//            for (Integer idServicios: (ArrayList<Integer>) body.get("servicio_ids")) {
-//                Servicio servicio = servicioService.obtenerPorId(Long.valueOf(idServicios));
-//                servicios.add(servicio);
-//            }
-//
-//            Cliente cliente = Cliente.builder()
-//                    .razonSocial(razonSocial)
-//                    .cuit(cuit)
-//                    .mail(mail)
-//                    .activo(activo)
-//                    .servicios(servicios)
-//                    .build();
-//        //}
+
+        if (rolService.obtenerPorId(id) != null) {
+//            String nombre= String.valueOf(body.get("rol"));
+            boolean activo = Boolean.valueOf((String) body.get("activo"));
+
+            rol = Rol.builder()
+//                .rol(rol)
+                .activo(activo)
+                .build();
+        }
 
         return rolService.actualizar(rol, id);
     }

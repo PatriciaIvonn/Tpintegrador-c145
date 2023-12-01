@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="se incorpora repository controller service de tecnico">
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/EspecialidadRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/repository/TecnicoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/TecnicoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/TecnicoServiceImpl.java" afterDir="false" />
+    <list default="true" id="76f25da5-20b8-4335-853d-fee6a3696f8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/TecnicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/TecnicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/ClienteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/RolRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/controller/RolRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/UsuarioServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/TpIntegrado/src/main/java/com/ap/tpintegrado/service/UsuarioServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +128,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="se incorpora repository controller service de tecnico" />
-    <option name="LAST_COMMIT_MESSAGE" value="se incorpora repository controller service de tecnico" />
   </component>
 </project>
