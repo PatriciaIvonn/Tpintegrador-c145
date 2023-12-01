@@ -35,8 +35,6 @@ public class UsuarioServiceImp implements UsuarioService {
     public Usuario actualizar(Usuario usuario, long id) {
         Usuario usuarioDB = usuarioRepository.findById(id).orElseThrow();
 //        clienteDB.setRazonSocial(cliente.getRazonSocial());
-//        clienteDB.setCuit(cliente.getCuit());
-//        clienteDB.setMail(cliente.getMail());
         // clienteDB.setActivo(cliente.getAActivo());
 
         return usuarioRepository.save(usuarioDB);

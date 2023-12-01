@@ -54,7 +54,6 @@ public class ClienteRestController {
             String mail = String.valueOf(body.get("mail"));
             boolean activo = Boolean.valueOf((String) body.get("activo"));
 
-            //
             Set<Servicio> servicios = new HashSet<>();
             for (Integer idServicios: (ArrayList<Integer>) body.get("servicio_ids")) {
                 Servicio servicio = servicioService.obtenerPorId(Long.valueOf(idServicios));
