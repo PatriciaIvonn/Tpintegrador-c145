@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.rest;
 
 import com.ap.tpintegrado.entity.Usuario;
 import com.ap.tpintegrado.service.UsuarioService;
@@ -48,7 +48,8 @@ public class UsuarioRestController {
     @PutMapping("/usuario/{id}")
     public Usuario actualizar(@Validated @RequestBody Map<String, Object> body, @PathVariable("id") long id){
         Usuario usuario = new Usuario();
-        //if (clienteService.obtenerPorId(id) != null) {
+
+        if (usuarioService.obtenerPorId(id) != null) {
 //            String razonSocial = String.valueOf(body.get("razonSocial"));
 //            String cuit = String.valueOf(body.get("cuit"));
 //            String mail = String.valueOf(body.get("mail"));
@@ -68,7 +69,7 @@ public class UsuarioRestController {
 //                    .activo(activo)
 //                    .servicios(servicios)
 //                    .build();
-//        //}
+        }
 
         return usuarioService.actualizar(usuario, id);
     }

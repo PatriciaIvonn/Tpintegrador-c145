@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.rest;
 
 import org.springframework.web.bind.annotation.RestController;
 

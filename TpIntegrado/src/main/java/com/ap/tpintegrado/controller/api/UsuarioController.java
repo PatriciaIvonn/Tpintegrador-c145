@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.api;
 
 import com.ap.tpintegrado.service.UsuarioService;
 import lombok.RequiredArgsConstructor;

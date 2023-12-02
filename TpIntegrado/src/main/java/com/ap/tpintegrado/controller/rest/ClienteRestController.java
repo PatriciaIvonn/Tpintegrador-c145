@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.rest;
 
 import com.ap.tpintegrado.entity.Cliente;
 import com.ap.tpintegrado.entity.Servicio;

@@ -35,7 +35,7 @@ public class ServicioServiceImp implements ServicioService {
     public Servicio actualizar(Servicio servicio, long id) {
         Servicio servicioDB = servicioRepository.findById(id).orElseThrow();
         servicioDB.setNombre(servicio.getNombre());
-        // servicioDB.setActivo(servicio.getActivo());
+        //servicioDB.setActivo(servicio.getActivo());
         servicioDB.setClientes(servicio.getClientes());
 
         return servicioRepository.save(servicioDB);

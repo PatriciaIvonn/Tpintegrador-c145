@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.api;
 
 import org.springframework.stereotype.Controller;
 

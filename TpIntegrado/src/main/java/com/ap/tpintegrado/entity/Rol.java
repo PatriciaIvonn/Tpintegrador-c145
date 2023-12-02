@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -24,4 +26,6 @@ public class Rol {
     private boolean activo = true;
 
     // Reslaciones
+    @OneToMany(mappedBy = "rol")
+    private Set<Usuario> usuarioSet;
 }

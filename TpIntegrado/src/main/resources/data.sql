@@ -1,9 +1,9 @@
-# INSERT INTO rol (nombre) VALUES ('admin');
-# INSERT INTO rol (nombre) VALUES ('comercial');
-# INSERT INTO rol (nombre) VALUES ('rrhh');
-# INSERT INTO rol (nombre) VALUES ('ayuda');
-# #
-# INSERT INTO tipo_mascota (nombre) VALUES ('Gato');
+INSERT INTO roles (rol) VALUES ('admin');
+INSERT INTO roles (rol) VALUES ('comercial');
+INSERT INTO roles (rol) VALUES ('rrhh');
+INSERT INTO roles (rol) VALUES ('ayuda');
+
+# INSERT INTO usuarios (nombre, ) VALUES ('admin');
 # INSERT INTO tipo_mascota (nombre) VALUES ('Perro');
 #
 # INSERT INTO mascota (tipo_id, nombre) VALUES (1, 'Garfield');

@@ -27,4 +27,7 @@ public class Usuario {
     private boolean activo = true;
 
     // Relaciones
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "rol_id", referencedColumnName = "idRol")
+    private Rol rol;
 }

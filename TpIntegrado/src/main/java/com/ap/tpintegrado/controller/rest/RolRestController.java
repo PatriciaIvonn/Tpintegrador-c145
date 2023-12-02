@@ -1,4 +1,4 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.rest;
 
 import com.ap.tpintegrado.entity.Rol;
 import com.ap.tpintegrado.service.RolService;

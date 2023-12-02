@@ -1,6 +1,5 @@
-package com.ap.tpintegrado.controller;
+package com.ap.tpintegrado.controller.rest;
 
-import com.ap.tpintegrado.entity.Cliente;
 import com.ap.tpintegrado.entity.TipoProblema;
 import com.ap.tpintegrado.service.TipoProblemaService;
 import lombok.RequiredArgsConstructor;
@@ -75,8 +74,8 @@ public class TipoProblemaRestController {
     }
 
     // Listado
-    @GetMapping("/clientes")
-    public List<Cliente> fetchClienteList(){
+    @GetMapping("/tipoProblema")
+    public List<TipoProblema> fetchClienteList(){
         return tipoProblemaService.obtenerTodos();
     }
 
